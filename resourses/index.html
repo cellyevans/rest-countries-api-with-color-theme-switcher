@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+      integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style2.css">
+    <title>rest countries api</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito sans:wght@300;600& 800display=swap"
+      rel="stylesheet"
+    />
+   </head>
+  <body>
+    <nav class="header-section">
+      <h2 class="title">Where in the world?</h2>
+      <div class="toggle-container">
+        <span class="moon-icon toggle-box"
+          ><i class="fa fa-moon-o" aria-hidden="true"></i>Dark Mode</span
+        >
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="search-container">
+        <div class="search-box">
+          <span class="icon"
+            ><i class="fa fa-search" aria-hidden="true"></i
+          ></span>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Search for a Country"
+          />
+        </div>
+
+        <div class="region-container">
+          <div class="region-filter">
+            filter by region<span class="angle-down">
+              <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></span>
+          </div>
+          <div class="region-dropdown">
+            <span class="region">africa</span>
+            <span class="region">america</span>
+            <span class="region">asia</span>
+            <span class="region">europe</span>
+            <span class="region">oceania</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <figure class="country">
+          <div class="country-flag">
+            <img
+              src="./image/Belgium.png"
+              alt="germany"
+              width="200"
+              height="120"
+            />
+          </div>
+          <figcaption class="country-desc">
+            <h3 class="country-name">germany</h3>
+            <div class="details">
+              <p class="population">Population: 81,770,900</p>
+              <p class="country-region">Region: Europe</p>
+              <p class="capital">Capital: Berlin</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="country">
+          <div class="country-flag">
+            <img
+              src="./image/united state of america.png"
+              alt="america"
+              width="200"
+              height="120"
+            />
+          </div>
+          <figcaption class="country-desc">
+            <h3 class="country-name">germany</h3>
+            <div class="details">
+              <p class="population">Population: 81,770,900</p>
+              <p class="country-region">Region: Europe</p>
+              <p class="capital">Capital: Berlin</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="country">
+          <div class="country-flag">
+            <img
+              src="./image/brasil.png"
+              alt="brasil"
+              width="200"
+              height="120"
+            />
+          </div>
+          <figcaption class="country-desc">
+            <h3 class="country-name">germany</h3>
+            <div class="details">
+              <p class="population">Population: 81,770,900</p>
+              <p class="country-region">Region: Europe</p>
+              <p class="capital">Capital: Berlin</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="country">
+          <div class="country-flag">
+            <img
+              src="./image/pexels-vectors-icon-968299.jpg"
+              alt="iceland"
+              width="200"
+               height="120"
+            />
+          </div>
+          <figcaption class="country-desc">
+            <h3 class="country-name">germany</h3>
+            <div class="details">
+              <p class="population">Population: 81,770,900</p>
+              <p class="country-region">Region: Europe</p>
+              <p class="capital">Capital: Berlin</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="country">
+          <div class="country-flag">
+            <img
+              src="./image/afghanistan1.png"
+              alt="asia"
+              width="200"
+              height="120"
+            />
+          </div>
+          <figcaption class="country-desc">
+            <h3 class="country-name">germany</h3>
+            <div class="details">
+              <p class="population">Population: 81,770,900</p>
+              <p class="country-region">Region: Europe</p>
+              <p class="capital">Capital: Berlin</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="country">
+          <div class="country-flag">
+            <img
+              src="./image/aland iland2.png"
+              alt="Europe"
+              width="200"
+              height="120"
+            />
+          </div>
+          <figcaption class="country-desc">
+            <h3 class="country-name">germany</h3>
+            <div class="details">
+              <p class="population">Population: 81,770,900</p>
+              <p class="country-region">Region: Europe</p>
+              <p class="capital">Capital: Berlin</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="country">
+          <div class="country-flag">
+            <img
+              src="./image/albania.png"
+              alt="Europe"
+              width="200"
+              height="120"
+            />
+            <div class="card"></div>
+          </div>
+          <figcaption class="country-desc">
+            <h3 class="country-name">germany</h3>
+            <div class="details">
+              <p class="population">Population: 81,770,900</p>
+              <p class="country-region">Region: Europe</p>
+              <p class="capital">Capital: Berlin</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="country">
+          <div class="country-flag">
+            <img
+              src="./image/algeria.png"
+              alt="Africa"
+              width="200"
+              height="120"
+            />
+          </div>
+          <figcaption class="country-desc">
+            <h3 class="country-name">germany</h3>
+            <div class="details">
+              <p class="population">Population: 81,770,900</p>
+              <p class="country-region">Region: Europe</p>
+              <p class="capital">Capital: Berlin</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+ </html>  
+
+  <!-- <html>
+    <body>
+      <nav class="header">
+        <h3 class="world">Where in the world?</h3>
+        <div class="moon-box">
+          <i class="fa fa-moon-o" aria-hidden="true"></i>Dark Mode</span>
+        </div>
+
+      </nav>
+
+      <div class="contain">
+        <div class="rang">
+          <span class="arrow"></span>
+          <button class="btn"> back</button>
+        </div>
+      </div>
+
+
+      
+        <figure class="count">
+          <div class="count-flag">
+            <img
+              src="./image/Belgium.png"
+              alt="germany"
+              width="400"
+              height="300"
+            />
+          </div>
+          <figcaption class="count-desc">
+            <h3 class="count-name">belgie</h3>
+            <div class="count-details">
+              <p class="count-population">Population: 11,319,511</p>
+              <p class="count-region"> Region: Europe</p>
+              <p class="count-sub">sub region:western europe</p>
+              <p class="count-capital">Capital: brussels</p>
+            </div>
+            
+          </figcaption>
+          <figcaption class="desc">
+            <p class="count-level">top level domain:be</p>
+            
+              <p class="currencies">currencies:europ</p>
+
+              <p class="language"> dutch,french, german</p>
+          </figcaption>
+
+          <div class="border">
+            <p class="country-border">border countries:</p>
+            <div class="btn-box">
+            <button class="btn-count france">france</button>
+            <button class="btn-count germany">germany</button>
+            <button class="btn-count netherland">netherland</button>
+
+          </div>
+           </div>
+          </figure>
+           
+      
+    </body>
+
+  </html>
+ -->
