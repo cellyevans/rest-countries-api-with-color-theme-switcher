@@ -1,17 +1,25 @@
 const container = document.querySelector(".main-container");
 const regions = document.querySelector(".region-dropdown");
+const search = document.querySelector(".search-box  input");
 
 document.addEventListener("DOMContentLoaded", () =>{
     getAllCountries();
-
+    searchCountries(search);
     regions.addEventListener("click", e => {
-       if(e.target.matches(".region")) {
-        getCountriesByRegion(e.target.textContent);
-       }
+        if(e.target.matches(".region")) {
+            getCountriesByRegion(e.target.textContent);
+        }
     })
-
+    
 })
 
+function searchCountries(element) {
+    element.addEventListener("input", (e) => {
+        if(/^[a-z]+$/gi.test(e.target.value)) {
+            getSearchData(e.target.value);
+        }
+    })
+}
 async function getAllCountries() {
     try {
         const response= await fetch("https://restcountries.com/v3.1/all");
@@ -33,15 +41,24 @@ async function getCountriesByRegion(region) {
     }
 }
 
-function getCountriesElement(country) {
-   const figure =document.createElement ("figure");
-    figure.className = "country";
+async function  getSearchData(data) {
+    container.innerHTML = "";
+    const URL = await fetch(`https://restcountries.com/v2/name/${data}`);
+    const response = await URL.json();
+    response.forEach(element => {
+        getCountriesElement(element)
+    });
+}
 
-   const allcontainer= `
-          <div class="country-flag">
-            <img
-              src=${country.flags.png}
-              alt=${country.name.common}
+function getCountriesElement(country) {
+    const figure =document.createElement ("figure");
+    figure.className = "country";
+    
+    const allcontainer= `
+    <div class="country-flag">
+    <img
+    src=${country.flags.png}
+    alt=${country.name.common}
               width="200"
               height="120"
             />
@@ -59,4 +76,5 @@ function getCountriesElement(country) {
     figure.innerHTML = allcontainer;
 
     container.appendChild(figure);
-}  
+} 
+
